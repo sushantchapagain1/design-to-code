@@ -1,0 +1,77 @@
+.register-wrapper {
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+.left-chat-biz {
+  background-color: #71c9f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.sentence {
+  width: 40rem;
+}
+.register-chat-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login-register-btns {
+  width: 38rem;
+}
+.index-logo {
+  width: 4.4rem;
+  margin-bottom: 1.8rem;
+}
+.btn-index {
+  margin: 10px 0;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 500;
+  border-radius: 3rem;
+  border: 1px solid #71c9f8;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+.sign-in-btn {
+  background-color: #1da1f2;
+  color: white;
+}
+.sign-in-btn:hover {
+  background: #71c9f8;
+  transition: 0.2s all ease-in;
+}
+
+.log-in-btn {
+  background-color: white;
+  color: #1da1f2;
+}
+.why-to-join-text-wrapper {
+  display: flex;
+  gap: 2rem;
+  color: white;
+  /* justify-content: center; */
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.join-heading {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+.sentence-icon {
+  font-size: 2.4rem;
+}
+.why-to-join-text {
+  font-size: 1.6rem;
+}
+.join-text {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}

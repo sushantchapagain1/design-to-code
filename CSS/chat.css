@@ -1,0 +1,320 @@
+/* 
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT WEIGHT : DEFAULT 400
+      
+      LINE HEIGHT : DEFAULT 1
+
+      SHADOWS :
+      
+      BORDER-RADIUS :
+
+      Whitespace : 
+      
+      FONT SIZE / TYPOGRAPHY  SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+ */
+
+:root {
+  --primary-color: #2a8bf2;
+  --primary-color-hover: #1a8cd8;
+  --white: #fff;
+  --links-color: #5a6379;
+  --links-hover: #e7e7e8;
+  --black: #0f1419;
+  --theme-gradient: linear-gradient(
+    90deg,
+    rgba(106, 174, 246, 1) 0%,
+    rgba(63, 151, 243, 1) 50%
+  );
+  --imp-color: #0d1c2e;
+  --less-imp-text: #536471;
+  --message-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+}
+
+/*****************************/
+/* Messages Section */
+/*****************************/
+
+/*  nav left side */
+.layout--wrapper {
+  height: 100vh;
+}
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.4rem;
+  padding: 1.2rem 0;
+}
+.app-logo {
+  height: 4.4rem;
+  /* width: 2.4rem; */
+}
+.main-side-nav {
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.2rem;
+}
+.nav-list {
+  color: var(--links-color);
+  text-decoration: none;
+  transition: all 0.4s;
+  text-transform: uppercase;
+  display: flex;
+  gap: 1.2rem;
+}
+.nav-list:link:hover,
+.nav-list:link:active {
+  color: var(--primary-color);
+}
+.nav-link-text {
+  font-style: bold;
+  font-size: 1.4rem;
+}
+.nav-icons {
+  font-size: 1.4rem;
+}
+.nav-icons:hover {
+  color: var(--primary-color);
+}
+.message-heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+/*Ends nav left side */
+
+/* Message right side */
+.messages-list {
+  height: auto;
+  box-shadow: 8px 0px 11px 0px rgba(212, 232, 252, 0.46) inset;
+  padding: 2.4rem;
+  overflow-y: scroll;
+}
+.message-heading {
+  font-size: 1.8rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.06rem;
+  text-transform: capitalize;
+  color: var(--imp-color);
+  font-weight: bold;
+}
+.message-heading-span {
+  text-transform: capitalize;
+  color: var(--less-imp-text);
+  display: block;
+}
+.chat-span {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+.new-messages-btn {
+  font-size: 1.2rem;
+}
+.individual-messages {
+  position: relative;
+  background-color: #f9fbff;
+  padding: 2.4rem;
+}
+.individual-messages::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -5rem;
+  background-color: #f9fbff;
+  width: 7rem;
+  height: 100%;
+  z-index: -1;
+}
+.no-individual-msg-wrapper {
+  border-bottom: 0.2px solid #2a8bf255;
+}
+.no-msg-container {
+  display: flex;
+  margin-top: 12rem;
+  justify-content: center;
+}
+.no-msg-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.no-msg-heading {
+  font-size: 3.6rem;
+  color: var(--black);
+}
+.start-chatting-btn {
+  align-self: start;
+}
+.no-msg-text {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: var(--less-imp-text);
+}
+/*Ends Message right side */
+
+/* messages-list */
+.messages-input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.search-messages-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: var(--message-box-shadow);
+  padding: 1rem;
+  border: 1rem;
+  margin-bottom: 2rem;
+}
+.search-icon {
+  font-size: large;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.search-icon:hover {
+  color: var(--primary-color-hover);
+}
+.messages-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.single-message {
+  box-shadow: var(--message-box-shadow);
+  padding: 2rem;
+  transition: all 0.2s;
+  border-radius: 1rem;
+}
+.profile-user {
+  border-radius: 50%;
+  height: 4.4rem;
+  cursor: pointer;
+}
+.message-listof-users {
+  display: flex;
+  justify-content: space-between;
+}
+.users-data {
+  display: flex;
+  gap: 1.2rem;
+}
+.username {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--less-imp-text);
+  align-self: center;
+}
+
+.users-message {
+  margin-top: 1.2rem;
+  color: var(--less-imp-text);
+  line-height: 1.3;
+  font-size: 1.2rem;
+}
+.online-time {
+  font-style: bold;
+  color: var(--less-imp-text);
+}
+.single-message-link {
+  text-decoration: none;
+}
+.single-message:hover {
+  background: var(--theme-gradient);
+}
+.indivdual-message-heading {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0.3px 0px 0px rgba(0, 0, 0, 0.28);
+  margin-bottom: 2.4rem;
+}
+.heading-left-ind-msg {
+  display: flex;
+  gap: 1.2rem;
+}
+.heading-right-ind-msg {
+  align-self: center;
+}
+.icon-see-profile {
+  cursor: pointer;
+}
+.friend-profile-img {
+  border-radius: 50%;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.incom-frn-chats {
+  display: flex;
+  gap: 1.2rem;
+}
+.incoming-chats {
+  margin-bottom: 2rem;
+}
+.friend-message {
+  background: var(--theme-gradient);
+  color: var(--white);
+  padding: 1rem;
+  line-height: 1.5;
+  border-radius: 0rem 1rem 1rem 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  width: fit-content;
+}
+.icon-react-message {
+  align-self: center;
+  justify-self: center;
+}
+.chats-wrapper {
+  display: flex;
+  gap: 0.8rem;
+}
+.my-message-wrapper {
+  display: grid;
+  align-items: flex-end;
+}
+
+.my-message-to-frn {
+  margin-bottom: 2rem;
+}
+.my-message {
+  line-height: 1.5;
+  width: fit-content;
+  margin-bottom: 1.2rem;
+  background-color: var(--white);
+  box-shadow: 0px 0px 3px 0px rgb(0 0 0 / 23%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--less-imp-text);
+}
+.btn-send-msg {
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.send-message-form {
+  display: flex;
+  gap: 1.2rem;
+}
+.write-message {
+  align-self: flex-end;
+}
+.send-msg-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.send-mesg-input {
+  padding: 1.2rem;
+  background-color: #f9fbff;
+}

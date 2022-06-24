@@ -1,0 +1,71 @@
+:root {
+  --primary-color: #2a8bf2;
+  --primary-color-hover: #1a8cd8;
+  --white: #fff;
+  --text-color: #555;
+  --links-hover: #e7e7e8;
+  --gray-color: #333;
+  --black: #0f1419;
+  --theme-gradient: linear-gradient(
+    90deg,
+    rgba(106, 174, 246, 1) 0%,
+    rgba(63, 151, 243, 1) 50%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: 'TT Norms', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+}
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-3-cols-messages {
+  grid-template-columns: 16rem 1fr 1fr;
+}
+.btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+.primary-btn {
+  color: var(--white);
+  background: var(--theme-gradient);
+  padding: 1.4rem 3rem;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+/* ::-webkit-scrollbar {
+  width: 1.8rem;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+} */

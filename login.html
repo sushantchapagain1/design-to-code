@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Biz</title>
+    <!-- Mine CSS -->
+    <link rel="stylesheet" href="CSS/generals.css" />
+    <link rel="stylesheet" href="CSS/register_login.css" />
+    <!-- ION ICONS -->
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- MINE JS -->
+    <script type="module" defer src="JS/script.js"></script>
+  </head>
+  <body>
+    <div class="container sign-up-container">
+      <div class="sign-up-wrapper">
+        <h2 class="sign-up-heading">Sign in with your account</h2>
+        <p class="aleady_signed_text">
+          Don't have an account?
+          <a href="register.html" class="login-link"> Sign up </a>
+        </p>
+        <form class="sign-in-form-wrapper">
+          <div class="input-wrapper">
+            <label for="lastname" class="sign-up-label">Email</label>
+            <input type="email" class="sign-up-input" />
+          </div>
+          <div class="input-wrapper input-wrapper-password">
+            <label for="password" class="sign-up-label">Password</label>
+            <input type="password" class="sign-up-input" id="sign-up-input" />
+            <ion-icon name="eye-outline" class="see-password"></ion-icon>
+          </div>
+          <button type="submit" class="btn sign-in-btn">Continue</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

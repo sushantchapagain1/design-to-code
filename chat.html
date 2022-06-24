@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Biz</title>
+    <!-- Mine CSS -->
+    <link rel="stylesheet" href="CSS/chat.css" />
+    <link rel="stylesheet" href="CSS/generals.css" />
+    <!-- <link rel="stylesheet" href="CSS/queries.css" /> -->
+
+    <!-- ION ICONS -->
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- MINE JS -->
+    <script type="module" defer src="JS/script.js"></script>
+  </head>
+  <body>
+    <!-- Messages Screen -->
+    <div class="container grid grid-3-cols-messages layout--wrapper">
+      <header class="header-nav">
+        <nav class="main-side-nav">
+          <ul class="main-nav-list">
+            <li class="links-wrapper">
+              <a href="index.html" class="nav-list">
+                <img src="Images/logo.png" alt="Logo" class="app-logo" />
+              </a>
+            </li>
+            <li class="links-wrapper">
+              <a href="index.html" class="nav-list">
+                <ion-icon name="home-outline" class="nav-icons"></ion-icon>
+                <p class="nav-link-text">Home</p>
+              </a>
+            </li>
+            <li class="links-wrapper">
+              <a href="#" class="nav-list">
+                <p class="nav-icons">#</p>
+                <p class="nav-link-text">Explore</p>
+              </a>
+            </li>
+            <li class="links-wrapper">
+              <a href="#" class="nav-list">
+                <ion-icon
+                  name="notifications-outline"
+                  class="nav-icons"
+                ></ion-icon>
+                <p class="nav-link-text">Notifications</p>
+              </a>
+            </li>
+            <li class="links-wrapper">
+              <a href="#" class="nav-list">
+                <ion-icon
+                  name="chatbubbles-outline"
+                  class="nav-icons"
+                ></ion-icon>
+                <p class="nav-link-text">Chat</p>
+              </a>
+            </li>
+            <li class="links-wrapper">
+              <a href="profile.html" class="nav-list">
+                <ion-icon name="person-outline" class="nav-icons"></ion-icon>
+                <p class="nav-link-text">Profile</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a href="index.html" class="nav-list">
+          <ion-icon name="log-out-outline" class="nav-icons"></ion-icon>
+          <p class="nav-link-text">Log out</p>
+        </a>
+      </header>
+      <main class="messages-list">
+        <div class="message-heading-wrapper">
+          <div class="chats-heading">
+            <p class="message-heading">Chats</p>
+            <div class="chat-span">
+              <span class="message-heading-span">recent chats </span>
+              <ion-icon
+                name="chevron-down-outline"
+                class="chats-down"
+              ></ion-icon>
+            </div>
+          </div>
+          <a href="#" class="btn primary-btn new-messages-btn"
+            >See Your Chats
+          </a>
+        </div>
+        <!-- if no loop of all messages -->
+        <!-- <div class="no-msg-wrapper">
+          <h2 class="no-msg-heading mt-3">
+            Send a message, get <br />
+            a message
+          </h2>
+          <p class="no-msg-text">
+            Direct Messages are private conversations <br />
+            between you and other people on CHatBiz. Share <br />
+            Bizz, media, and more!
+          </p>
+          <button class="start-chatting-btn btn primary-btn">
+            Start a conversation
+          </button>
+        </div> -->
+        <!--end  if no loop of all messages -->
+
+        <!-- all messages List -->
+        <div class="search-messages-wrapper">
+          <ion-icon name="search-outline" class="search-icon"></ion-icon>
+          <input type="text" placeholder="Search..." class="messages-input" />
+        </div>
+        <div class="messages-wrapper">
+          <!-- loop later of all user messages -->
+          <!--  -->
+          <a href="#" class="single-message-link">
+            <div class="single-message">
+              <div class="message-listof-users">
+                <div class="users-data">
+                  <p class="active-user" id="users-profile">
+                    <img
+                      src="Images/user.jpg"
+                      alt="user's profile"
+                      class="profile-user"
+                    />
+                  </p>
+                  <p class="username">Dalle Don</p>
+                </div>
+                <div class="online-time">1 minute ago</div>
+              </div>
+              <p class="users-message">
+                Most of its text is made up from sections 1.10.32–3 of Cicero's
+                De finibus bonorum et malorum (On the Boundaries of Goods and
+                Evils; finibus may also be translated as purposes).
+              </p>
+            </div>
+          </a>
+          <!--  -->
+          <a href="#" class="single-message-link">
+            <div class="single-message">
+              <div class="message-listof-users">
+                <div class="users-data">
+                  <p class="active-user" id="users-profile">
+                    <img
+                      src="Images/user3.jpg"
+                      alt="user's profile"
+                      class="profile-user"
+                    />
+                  </p>
+                  <p class="username">Sushant Chapagain</p>
+                </div>
+                <div class="online-time">1hr 45min ago</div>
+              </div>
+              <p class="users-message">You: Sent a photo</p>
+            </div>
+          </a>
+          <!--  -->
+          <!--  -->
+          <a href="#" class="single-message-link">
+            <div class="single-message">
+              <div class="message-listof-users">
+                <div class="users-data">
+                  <p class="active-user" id="users-profile">
+                    <img
+                      src="Images/user1.jpg"
+                      alt="user's profile"
+                      class="profile-user"
+                    />
+                  </p>
+                  <p class="username">Sushant Chapagain</p>
+                </div>
+                <div class="online-time">21 hr ago</div>
+              </div>
+              <p class="users-message">
+                You: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolor esse aspernatur autem molestias corrupti blanditiis
+                exercitationem similique ab omnis aliquam sint rerum animi.
+              </p>
+            </div>
+          </a>
+          <!--  -->
+          <!--  -->
+          <a href="#" class="single-message-link">
+            <div class="single-message">
+              <div class="message-listof-users">
+                <div class="users-data">
+                  <p class="active-user" id="users-profile">
+                    <img
+                      src="Images/user2.jpg"
+                      alt="user's profile"
+                      class="profile-user"
+                    />
+                  </p>
+                  <p class="username">Sushant Chapagain</p>
+                </div>
+                <div class="online-time">3 days ago</div>
+              </div>
+              <p class="users-message">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                esse aspernatur autem molestias corrupti blanditiis animi.
+              </p>
+            </div>
+          </a>
+          <!--  -->
+        </div>
+
+        <!--End all messages -->
+      </main>
+      <aside class="individual-messages">
+        <!-- <div class="no-msg-container">
+          <div class="no-msg-wrapper">
+            <h2 class="no-msg-heading">
+              You don’t have a <br />
+              message selected
+            </h2>
+            <p class="no-msg-text">
+              Choose one from your existing messages, or start <br />
+              a new one.
+            </p>
+            <button class="start-chatting-btn btn primary-btn">
+              New Message
+            </button>
+          </div>
+        </div> -->
+        <!-- if meesage is not empty show all messages  -->
+
+        <div class="no-individual-msg-wrapper">
+          <div class="indivdual-message-heading">
+            <div class="heading-left-ind-msg">
+              <a href="#">
+                <img
+                  src="Images/user.jpg"
+                  alt="user-photo"
+                  class="indi-msg-profile profile-user"
+                />
+              </a>
+              <p class="username">Dalle Don</p>
+            </div>
+            <div class="heading-right-ind-msg">
+              <ion-icon
+                name="ellipsis-vertical-outline"
+                class="icon-see-profile"
+              ></ion-icon>
+            </div>
+          </div>
+
+          <div class="incom-frn-chats">
+            <img
+              src="Images/user.jpg"
+              alt="users photo"
+              class="friend-profile-img"
+            />
+            <div class="incoming-chats">
+              <div class="chats-wrapper">
+                <p class="friend-message">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                  esse aspernatur autem molestias corrupti blanditiis animi.
+                </p>
+                <ion-icon
+                  name="ellipsis-horizontal-outline"
+                  class="icon-react-message"
+                  id="message-react-btn"
+                ></ion-icon>
+              </div>
+              <div class="chats-wrapper">
+                <p class="friend-message">Can I Send You Files?</p>
+                <ion-icon
+                  name="ellipsis-horizontal-outline"
+                  class="icon-react-message"
+                  id="message-react-btn"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+          <!--  users msg  -->
+          <div class="my-message-wrapper">
+            <div class="my-message-to-frn chats-wrapper">
+              <ion-icon
+                name="ellipsis-horizontal-outline"
+                class="icon-react-message"
+                id="message-react-btn"
+              ></ion-icon>
+              <p class="my-message">Hey Small Boi! Okay Send Plz.</p>
+            </div>
+          </div>
+          <!-- end users msg  -->
+          <!-- repeat friend mssg -->
+          <div class="incom-frn-chats">
+            <img
+              src="Images/user.jpg"
+              alt="users photo"
+              class="friend-profile-img"
+            />
+            <div class="incoming-chats">
+              <div class="chats-wrapper">
+                <p class="friend-message">Did you check it?</p>
+                <ion-icon
+                  name="ellipsis-horizontal-outline"
+                  class="icon-react-message"
+                  id="message-react-btn"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+          <!-- end repeat friend mssg -->
+          <!--  users msg  -->
+          <div class="my-message-wrapper">
+            <div class="my-message-to-frn chats-wrapper">
+              <ion-icon
+                name="ellipsis-horizontal-outline"
+                class="icon-react-message"
+                id="message-react-btn"
+              ></ion-icon>
+              <p class="my-message">Go study laravel noob.</p>
+            </div>
+          </div>
+          <!-- end users msg  -->
+          <!-- repeat friend mssg -->
+          <div class="incom-frn-chats">
+            <img
+              src="Images/user.jpg"
+              alt="users photo"
+              class="friend-profile-img"
+            />
+            <div class="incoming-chats">
+              <div class="chats-wrapper">
+                <p class="friend-message">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Excepturi veniam eligendi aliquid, fugiat ducimus autem
+                  reiciendis error quia cum adipisci iste beatae, eaque alias.
+                  Modi hic repellendus ipsum in dolores.
+                </p>
+                <ion-icon
+                  name="ellipsis-horizontal-outline"
+                  class="icon-react-message"
+                  id="message-react-btn"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+          <!-- end repeat friend mssg -->
+          <!--  users msg  -->
+          <div class="my-message-wrapper">
+            <div class="my-message-to-frn chats-wrapper">
+              <ion-icon
+                name="ellipsis-horizontal-outline"
+                class="icon-react-message"
+                id="message-react-btn"
+              ></ion-icon>
+              <p class="my-message">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+                veritatis quisquam nulla, rem necessitatibus eum alias. Vero
+                saepe repellendus atque dolorem alias. Rerum laudantium delectus
+                sapiente reprehenderit vero deleniti quas?.
+              </p>
+            </div>
+          </div>
+          <!-- end users msg  -->
+        </div>
+        <div class="write-message">
+          <form class="send-message-form">
+            <input
+              type="text"
+              placeholder="Write a message ..."
+              class="messages-input send-mesg-input"
+            />
+            <button class="btn-send-msg emoji-btn">
+              <ion-icon name="happy-outline" class="send-msg-icon"></ion-icon>
+            </button>
+            <button class="btn-send-msg send-msg-btn">
+              <ion-icon name="navigate-circle" class="send-msg-icon"></ion-icon>
+            </button>
+          </form>
+        </div>
+      </aside>
+    </div>
+    <!-- Ends Messages Screen -->
+  </body>
+</html>

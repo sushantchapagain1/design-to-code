@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Biz</title>
+    <!-- Mine CSS -->
+    <link rel="stylesheet" href="CSS/generals.css" />
+    <link rel="stylesheet" href="CSS/register_login.css" />
+
+    <!-- ION ICONS -->
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- MINE JS -->
+    <script type="module" defer src="JS/script.js"></script>
+  </head>
+  <body>
+    <a href="index.html" class="go-index-link">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </a>
+    <div class="container sign-up-container">
+      <div class="sign-up-wrapper">
+        <h2 class="sign-up-heading">Sign up now for chat biz</h2>
+        <p class="aleady_signed_text">
+          Already have an account?
+          <a href="login.html" class="login-link"> Sign in </a>
+        </p>
+        <form class="sign-in-form-wrapper">
+          <div class="input-wrapper">
+            <label for="firstname" class="sign-up-label">First name</label>
+            <input type="text" class="sign-up-input" placeholder="Sushant" />
+          </div>
+          <div class="input-wrapper">
+            <label for="lastname" class="sign-up-label">Last name</label>
+            <input type="text" class="sign-up-input" placeholder="Chapagain" />
+          </div>
+          <div class="input-wrapper">
+            <label for="lastname" class="sign-up-label">Email</label>
+            <input
+              type="email"
+              class="sign-up-input"
+              placeholder="example@example.com"
+            />
+          </div>
+          <div class="input-wrapper input-wrapper-password">
+            <label for="password" class="sign-up-label">Password</label>
+            <input type="password" class="sign-up-input" id="sign-up-input" />
+            <ion-icon name="eye-outline" class="see-password"></ion-icon>
+          </div>
+          <button type="submit" class="btn sign-in-btn">Create account</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

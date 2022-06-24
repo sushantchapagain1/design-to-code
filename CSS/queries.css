@@ -1,0 +1,5 @@
+@media (max-width: 46em) {
+  .layout--wrapper {
+    grid-template-columns: 1fr;
+  }
+}
